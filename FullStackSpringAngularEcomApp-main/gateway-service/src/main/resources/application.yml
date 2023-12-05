@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+            prefer-ip-address: true
+            acl-token: hvs.ct8MkgD4fxjtsONjRWdZJVt8
